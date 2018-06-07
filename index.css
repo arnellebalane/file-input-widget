@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #111;
+}
+
+a,
+button {
+    font: inherit;
+    color: inherit;
+}
+
+input {
+    position: absolute;
+    opacity: 0.01;
+    transform: scale(0.01);
+}
+
+label {
+    padding: 1.5em 5em;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    background-color: #ffeb3b;
+    cursor: pointer;
+}
+
+input:focus + label,
+label:hover {
+    box-shadow:
+        0 0 0 5px #111,
+        0 0 0 10px #ffeb3b;
+}
+
+label span {
+    display: block;
+    margin-top: 0.25em;
+    font-size: 0.85em;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+label span:empty {
+    display: none;
+}
